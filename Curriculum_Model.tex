@@ -1,0 +1,141 @@
+\documentclass[a4paper]{article}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[alf]{abntcite}
+
+\def\name{Fulano de Tal}
+\def\endereco{Rua X numero 1000, Ap. 999}
+\def\site{www.meusite.com}
+\def\github{http://github.com/meu-usuario}
+\def\cidade{Porto Alegre -- RS}
+\def\mail{meu.email@gmail.com}
+\def\telefone{+55 51 9999-9999}
+
+%
+% Configuração das propriedades do PDF
+%
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {resume, curriculum vitae},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 14.0in},
+  left=0.8in,
+  top=0.8in
+}
+
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+\setlength\parindent{0em}
+
+\begin{document}
+
+%
+% Cabeçalho do documento.
+%
+{\huge \name} \\
+{\small
+ \href{url}{\site} \\
+\href{url}{\github}}
+
+\vspace{0.10in}
+
+\begin{minipage}{0.45\linewidth}
+  \endereco \\
+  \cidade
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    \href{mailto:\mail}{\tt \mail} \\
+    Telefone: \telefone
+  \end{tabular}
+\end{minipage}
+
+\vspace{1.5\baselineskip}
+\hline
+%
+% Formação
+%
+
+\section*{Formação}
+\begin{itemize}
+  \item \textbf{Mestrado em Ciência da Computação} \\ UNIXYZ, 2008
+  \item \textbf{Bacharelado em Ciência da Computação}\\ UNIXWW, 2002
+\end{itemize}
+
+\vspace{1.5\baselineskip}
+\hline
+%
+% Idiomas
+%
+\section*{Idiomas}
+\begin{itemize}
+  \item Inglês (fluente)
+   \item Espanhol (intermediário)
+\end{itemize}
+
+\vspace{1.5\baselineskip}
+\hline
+%
+%Experiência Profissional
+%
+\section*{Experiência Profissional}
+
+\subsection*{2009 -- atual: Empresa XYZ}
+\begin{itemize}
+\item Vivamus in tortor lacus. Fusce sagittis ligula a purus interdum sit amet rhoncus est consequat. Fusce felis orci, iaculis ac cursus vel, vulputate molestie nisl. Praesent auctor congue risus feugiat blandit. In ultrices mi a risus scelerisque volutpat non non enim.
+\end{itemize}
+
+\subsection*{2008 -- 2009: Empresa Agatetepê WWW}
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod erat quis urna dictum dictum. Aliquam ultricies commodo interdum. Nunc libero leo, vulputate at pellentesque in, volutpat suscipit lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat.
+\end{itemize}
+
+\subsection*{2004 -- 2008: Empresa do papai}
+\begin{itemize}
+\item Nullam aliquam cursus ante, sed auctor ante mollis eu. Etiam mollis, magna id aliquam tristique, arcu massa facilisis mi, non interdum orci felis ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus accumsan pellentesque.
+\end{itemize}
+
+\vspace{1.5\baselineskip}
+\hline
+
+%
+% Eventos e Congressos
+%
+\pagebreak
+\section*{Eventos e Congressos}
+\begin{itemize}
+	\item \emph{Seminário Nacional que eu assisti - Minha Cidade - 2010} \\ Participante
+	\item \emph{Conferência Anual dos Programadores - Outra Cidade - 2009} \\ Palestrante (Minha Palestra)
+\end{itemize}
+
+\vspace{1.5\baselineskip}
+\hline
+%
+% Áreas de Conhecimento
+%
+\section*{Áreas de Conhecimento}
+\begin{itemize}
+	\item Linguagens de Programação: \\ Python, Ruby, Perl, C++, Shell
+	\item Sistemas Operacionais: \\ FreeBSD, Mac, Windows
+	\item Conhecimentos Diversos
+\end{itemize}
+
+\vspace{8\baselineskip}
+\flushright{ Minha Cidade, \today}
+\end{document}
